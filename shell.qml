@@ -1,16 +1,21 @@
 import Quickshell
+import Quickshell.Wayland
 import QtQuick
 
-FloatingWindow {
-    visible: true
-    width: 200
-    height: 100
+PanelWindow {
+    anchors.top: true
+    anchors.left: true
+    anchors.right: true
+    implicitHeight: 30
+    color: "#1a1b26"
 
     Text {
+        
         anchors.centerIn: parent
-        text: "Hello, Quickshell!"
-        color: "#0db9d7"
-        font.pixelSize: 18
+        text: "My First Bar!"
+        color: "#a9b1d6"
+        font.pixelSize: 14
+        
     }
 }
 
